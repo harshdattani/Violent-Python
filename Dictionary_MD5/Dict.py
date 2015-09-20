@@ -6,11 +6,12 @@ def create_pass(first):
     return PassW
 
 def pass_break(word):
- dicfile = open('list.txt','r')
+ dicfile = open('passwords.txt','r')
  for Word in dicfile.readlines():
+     Word = Word.strip('\n')
      PassWord = create_pass(Word)
      if(PassWord == word):
          print 'Password is ' + Word
          return
 
-word = pass_break('987b337f4eececd83b220e8aa44cefde')
+word = pass_break('0d378caceeaf25845ea380b7e9833f6d')
