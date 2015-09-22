@@ -1,6 +1,6 @@
 import urllib2
 from bs4 import BeautifulSoup
-urlContent = urllib2.urlopen('http://www.wolfsoft.ws').read()
+urlContent = urllib2.urlopen('<URL Name>').read()
 soup = BeautifulSoup(urlContent)
 imgTags = soup.findAll('img')
 jsTags = soup.findAll('script')
